@@ -1,0 +1,46 @@
+.table__row {
+  color: black;
+  margin-bottom: 1rem;
+}
+.🤖 {
+  text-align: center;
+}
+.table__header {
+  background: rgb(84, 196, 248);
+  color: white;
+}
+.table__header tr {
+  padding: 2rem;
+}
+.ts {
+  text-align: start;
+  padding: 0.5rem;
+}
+tbody tr .Padd {
+  padding-left: 0.5rem;
+}
+.task__btn {
+  cursor: pointer;
+  width: 100%;
+  height: 2rem;
+  background: rgb(242, 148, 148);
+  color: white;
+  border: none;
+}
+.task__btn:hover {
+  background: rgb(245, 106, 106);
+}
+table {
+  width: 27rem;
+  margin: 1rem;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.completed {
+  background: rgb(142, 225, 142);
+}

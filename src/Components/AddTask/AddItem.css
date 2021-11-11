@@ -1,0 +1,23 @@
+form {
+  margin: 0.8rem;
+  width: 27rem;
+  height: 2.5rem;
+}
+
+form input {
+  height: 100%;
+  width: 75%;
+}
+form button {
+  cursor: pointer;
+  height: 100%;
+  width: 25%;
+  background-color: rgb(84, 196, 248);
+  border: rgb(84, 196, 248);
+  border-radius: 0 5px 5px 0;
+  color: white;
+}
+form button:hover {
+  background-color: rgb(19, 167, 235);
+  border: rgb(84, 196, 248);
+}

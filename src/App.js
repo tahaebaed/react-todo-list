@@ -1,25 +1,33 @@
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import TodoTask from './Components/TodoTask/TodoTask';
+import AddTask from './Components/AddTask/AddItem';
+class App extends Component {
+  state = {
+    tasks: [{ id: 1, taskname: 'This is your first Task', progress: false }],
+  };
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  deleteTask = taskId => {
+    let tasks = this.state.tasks.filter(task => task.id !== taskId);
+    this.setState({ tasks });
+  };
+
+  addNewTask = task => {
+    let tasks = this.state.tasks;
+    tasks.push(task);
+    this.setState({
+      tasks,
+    });
+  };
+  render() {
+    return (
+      <div className='App container'>
+        <h1>Todo List App</h1>
+        <AddTask addTask={this.addNewTask} />
+        <TodoTask tasks={this.state.tasks} deleteTask={this.deleteTask} />
+      </div>
+    );
+  }
 }
 
 export default App;
