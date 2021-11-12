@@ -12,6 +12,7 @@ class AddTask extends Component {
 
   handleSubmit = e => {
     e.preventDefault();
+
     this.props.addTask(this.state);
     this.setState({
       id: Math.random(),

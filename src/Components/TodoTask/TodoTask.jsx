@@ -22,7 +22,7 @@ class TodoTask extends Component {
       })
     ) : (
       <tr>
-        <td className='🤖' colspan='2'>
+        <td className='🤖' colSpan='2'>
           <h3>There is no task to show</h3>
         </td>
       </tr>
@@ -34,7 +34,7 @@ class TodoTask extends Component {
           <thead className='table__header'>
             <tr>
               <th className='ts'>Task Name</th>
-              <th> Delete </th>
+              <th className='w2rem'> Delete </th>
             </tr>
           </thead>
           <tbody>{task}</tbody>
